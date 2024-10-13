@@ -14,7 +14,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/*Text here*/ }
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Computer Science student</span>
+            <span className="text-xl">Computer Science student at Grenoble INP - Ensimag</span>
             <h1 className="h1 mb-6">
                 Hello I'm <br/><span className="text-accent">Reda Belfaida</span>
             </h1>
@@ -23,15 +23,17 @@ const Home = () => {
             </p>
           {/*Button Stuffs*/ }
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl"/>
-              </Button>
-              <div className="mb-8 xl:mb-0">
+                <a href="/assets/MyCV.pdf" download>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="uppercase flex items-center gap-2"
+                    >
+                      <span>Download CV</span>
+                      <FiDownload className="text-xl" />
+                    </Button>
+                </a>
+                <div className="mb-8 xl:mb-0">
                 <Social
                 containerStyles="flex gap-6"
                 iconStyles="w-9 h-9 border border-accent rounded-full flex 
