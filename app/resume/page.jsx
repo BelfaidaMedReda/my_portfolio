@@ -157,10 +157,6 @@ const tech_stack = {
             name :"Tailwind.css",
         },
         {
-            icon:<FaFigma/>,
-            name :"Figma",
-        },
-        {
             icon:<FaNodeJs/>,
             name :"Node.js",
         },
@@ -179,6 +175,10 @@ const tech_stack = {
         {
             icon:<SiR/>,
             name :"R",
+        },
+        {
+            icon:<BsFiletypeSql/>,
+            name :"Sql",
         },
         
 
@@ -199,7 +199,7 @@ const Resume = () => {
         >
             <div className="container mx-auto">
                     <Tabs
-                        defaultValue="experience"
+                        defaultValue="education"
                         className="flex flex-col xl:flex-row gap-[60px]"
                     >
                         <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
@@ -231,11 +231,14 @@ const Resume = () => {
                                                     flex flex-col justify-center items-center lg:items-start                    
                                                     gap-1"
                                                     >
-                                                        <span>{item.duration}</span>
-                                                        <h3> {item.position}</h3>
-                                                        <div>
-                                                            <span></span>
-                                                            <p>{item.company}</p>
+                                                        <span className="text-accent">{item.duration}</span>
+                                                        <h3 className="text-xl max-w-[260px] min-h-[60px]
+                                                        text-center lg:text-left"> 
+                                                            {item.position}
+                                                        </h3>
+                                                        <div className="flex items-center gap-3">
+                                                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                            <p className="text-white/60">{item.company}</p>
                                                         </div>
                                                     </li>
                                                 );
