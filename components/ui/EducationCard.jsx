@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
-import { motion } from 'framer-motion';
+import {ScrollArea} from "@/components/ui/scroll-area"
 
 {/*item.icon*/}
 const EducationItem = ({ item }) => (
@@ -33,10 +33,12 @@ const EducationItem = ({ item }) => (
           <img src={education.icon} alt="Education icon" className="w-8 h-8 mr-3" />
           <h2 className="text-2xl font-bold text-white">{education.title}</h2>
         </div>
-        <p className="mb-6 text-accent">{education.description}</p>
-        {education.items.map((item, index) => (
-          <EducationItem key={index} item={item} />
-        ))}
+        <p className="mb-6 text-white/60">{education.description}</p>
+        <ScrollArea className="h-[400px]">
+            {education.items.map((item, index) => (
+                <EducationItem key={index} item={item} />
+              ))}
+        </ScrollArea>
       </section>
     );
   };
