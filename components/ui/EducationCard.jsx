@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import {ScrollArea} from "@/components/ui/scroll-area"
 
@@ -30,7 +29,6 @@ const EducationItem = ({ item }) => (
     return (
       <section className="max-w-3xl mx-auto p-4 bg-primary text-white">
         <div className="flex items-center mb-6">
-          <img src={education.icon} alt="Education icon" className="w-8 h-8 mr-3" />
           <h2 className="text-2xl font-bold text-white">{education.title}</h2>
         </div>
         <p className="mb-6 text-white/60">{education.description}</p>

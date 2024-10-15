@@ -1,7 +1,4 @@
-
 "use client";
-
-
 import { FaHtml5, FaCss3,FaJs,FaReact,FaFigma,FaNodeJs,FaJava } from "react-icons/fa";
 import { Tabs, TabsContent, TabsList,TabsTrigger } from "@/components/ui/tabs";
 import { BsFiletypeSql } from "react-icons/bs";
@@ -14,7 +11,6 @@ import {SiTailwindcss,SiNextdotjs, SiPython,SiC,SiR,SiIntellijidea,SiRstudioide,
 import App from "@/components/ui/EducationCard";
 import { TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
 import { Tooltip, TooltipContent } from "@/components/ui/tooltip";
-import { List } from "lucide-react";
 
 
 const about = {
@@ -58,32 +54,32 @@ const experience = {
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
     items:[
         {
-            compagny : "Tech Solutions Inc.",
+            company : "Tech Solutions Inc.",
             position : "Full Stack Developper",
             duration : "2022 - Present"
         },
         {
-            compagny : "Web Design Studio",
+            company : "Web Design Studio",
             position : "Front-End Developper Intern",
             duration : "Summer 2021"
         },
         {
-            compagny : "E-commerce start-up",
+            company : "E-commerce start-up",
             position : "Freelance Web Developper",
             duration : "2020 - 2021"
         },
         {
-            compagny : "Tech Academy",
+            company : "Tech Academy",
             position : "Teaching Assistant",
             duration : "2019 - 2021"
         },
         {
-            compagny : "Digital Agency",
+            company : "Digital Agency",
             position : "UI/UX Designer",
             duration : "2018 - 2019"
         },
         {
-            compagny : "Software Developpement firm",
+            company : "Software Developpement firm",
             position : "Junior Developper",
             duration : "2017 - 2018"
         },
@@ -213,8 +209,7 @@ const Resume = () => {
                             <TabsTrigger value="Tools">Tools</TabsTrigger>
                             <TabsTrigger value="about">About me</TabsTrigger>
                         </TabsList>
-
-                        <div className="min-h-[70vh] w-full">
+                        {/*
                             <TabsContent value="experience" className="w-full">
                                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                     <h3 className="text-4xl font-bold">{experience.title}</h3>
@@ -247,7 +242,8 @@ const Resume = () => {
                                     </ScrollArea>
                                 </div>
                             </TabsContent>
-
+                        */}
+                        <div className="min-h-[70vh] w-full">
                             {/* education */ }
                             <TabsContent value="education" className="w-full">
                                 <App/>
