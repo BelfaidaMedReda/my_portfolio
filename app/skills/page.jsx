@@ -9,26 +9,26 @@ const skills = [
 
     {
         num:"01",
-        title:"ML developpement",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+        title:"Web developpement",
+        description:"Skilled in creating responsive, dynamic websites using modern frameworks",
         href:"",
     },
     {
         num:"02",
-        title:"Web Developpement",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+        title:"Data Modeling",
+        description:"Experienced in designing efficient databases using PostgreSQL",
         href:"",
     },
     {
         num:"03",
-        title:"Data Modeling",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+        title:"Machine/Deep Learning",
+        description:"Proficient in ML algorithms and tools like Scikit-learn and TensorFlow for real-world applications ",
         href:"",
     },
     {
         num:"04",
-        title:"Data Engineering",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+        title:"Applied Mathematics",
+        description:"Strong knowledge of probability, statistics, and linear algebra for data related topics",
         href:"",
     },
 ]

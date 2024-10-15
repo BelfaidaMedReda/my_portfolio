@@ -15,28 +15,28 @@ const projects = [
         num: "01",
         category: "π Approximation",
         title: "project 1",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor",
-        stack: [{ name: 'Html 5' }, { name: 'css 3' }, { name: 'JavaScript' }],
+        description: "An approximation of π using Monte-Carlo's method",
+        stack: [{ name: 'Python' }],
         image: "/projects/hh.png",
-        github: "",
+        github: "https://github.com/BelfaidaMedReda/-Approximation-",
     },
     {
         num: "02",
-        category: "fullstack",
+        category: "GUI developpement",
         title: "project 2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor",
-        stack: [{ name: 'Next.js' }, { name: 'Tailwind.css' }, { name: 'Node.js' }],
+        description: "Development of a Graphical User Interface library",
+        stack: [{ name: 'C' }],
         image: "/projects/dow.png",
-        github: "",
+        github: "https://github.com/BelfaidaMedReda/Projet_IG",
     },
     {
         num: "03",
-        category: "frontend",
+        category: "Polygons",
         title: "project 3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor",
-        stack: [{ name: 'Next.js' }, { name: 'Tailwind.css' }],
+        description: "Developping algorithms to detect intersections between multiple polygons",
+        stack: [{ name: 'Python' }],
         image: "/projects/poly.png",
-        github: "",
+        github: "https://github.com/BelfaidaMedReda?tab=repositories",
     },
 ];
 
@@ -82,7 +82,7 @@ const Work = () => {
                             </ul>
                             <div className="border border-white/20"></div>
                             <div className="flex items-center gap-4">
-                                <Link href={project.github}>
+                                <a href={project.github}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full
@@ -94,7 +94,7 @@ const Work = () => {
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>

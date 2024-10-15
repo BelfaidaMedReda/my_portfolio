@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList,TabsTrigger } from "@/components/ui/tabs";
 import { BsFiletypeSql } from "react-icons/bs";
 import { FaGitAlt } from "react-icons/fa6";
 import { VscVscodeInsiders } from "react-icons/vsc";
-import { ScrollArea } from "@/components/ui/scroll-area";
+{/* import { ScrollArea } from "@/components/ui/scroll-area";*/}
 import { motion } from "framer-motion";
 
 import {SiTailwindcss,SiNextdotjs, SiPython,SiC,SiR,SiIntellijidea,SiRstudioide,SiClion,SiPostgresql} from "react-icons/si";
@@ -46,9 +46,8 @@ const about = {
 }
 
 
-{/*Experience data*/ }
-
-const experience = {
+{/*Experience data
+    const experience = {
     icon:"/assets/badge.svg",
     title:"My experience",  
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
@@ -85,6 +84,9 @@ const experience = {
         },
     ]
 }
+    
+*/ }
+
 
 
 
@@ -199,18 +201,23 @@ const Resume = () => {
                         className="flex flex-col xl:flex-row gap-[60px]"
                     >
                         <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-                            {/*
                             
-                            <TabsTrigger value="experience">Experience</TabsTrigger>
+                            {/*
+                                <TabsTrigger value="experience">Experience</TabsTrigger>
                             */}
+
+                            
 
                             <TabsTrigger value="education">Education</TabsTrigger>
                             <TabsTrigger value="Tech Stack">Tech Stack</TabsTrigger>
                             <TabsTrigger value="Tools">Tools</TabsTrigger>
                             <TabsTrigger value="about">About me</TabsTrigger>
                         </TabsList>
+                        
+                        <div className="min-h-[70vh] w-full">
+
                         {/*
-                            <TabsContent value="experience" className="w-full">
+                        <TabsContent value="experience" className="w-full">
                                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                     <h3 className="text-4xl font-bold">{experience.title}</h3>
                                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
@@ -242,8 +249,18 @@ const Resume = () => {
                                     </ScrollArea>
                                 </div>
                             </TabsContent>
+                        
+                        
+                        
+                        
+                        
                         */}
-                        <div className="min-h-[70vh] w-full">
+                        
+
+
+
+
+
                             {/* education */ }
                             <TabsContent value="education" className="w-full">
                                 <App/>
