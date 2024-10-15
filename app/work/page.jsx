@@ -12,17 +12,17 @@ import {Tooltip,TooltipContent,TooltipProvider,TooltipTrigger} from "@/component
 
 import Image from "next/image";
 import Link from "next/link";
+import { WorkSliderBtns } from "@/components/ui/WorkSliderBtns";
 
 
 const projects=[
     {
         num:"01",
-        category:"frontend ",
+        category:"π Approximation",
         title:"project 1",
         decription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor",
         stack:[{ name : 'Html 5' },{ name : 'css 3' },{ name : 'JavaScript' }],
-        image:"",
-        live:"",
+        image:"/projects/do.png",
         github:"",
     },
     {
@@ -31,8 +31,7 @@ const projects=[
         title:"project 2",
         decription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor",
         stack:[{ name : 'Next.js' },{ name : 'Tailwind.css' },{ name : 'Node.js' }],
-        image:"",
-        live:"",
+        image:"/projects/rsz_hh.png",
         github:"",
     },
     {
@@ -41,15 +40,10 @@ const projects=[
         title:"project 3",
         decription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor",
         stack:[{ name : 'Next.js' },{ name : 'Tailwind.css' }],
-        image:"",
-        live:"",
+        image:"/projects/poly.png",
         github:"",
     },
 ]
-
-
-
-
 
 
 
@@ -70,9 +64,12 @@ const work = () => {
 
     return( 
         <motion.section
-        transition={{opacity:0}}
-        animate={{opacity:1}}
-        className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+            initial={{opacity: 0}}
+            animate={{ 
+                opacity: 1, 
+                transition: {delay: 2.4, duration: 0.4, ease: "easeIn"},
+            }}
+            className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
         >
             <div className="container mx-auto">
                 <div className=" flex flex-col xl:flex-row xl:gap-[30px]">
@@ -124,27 +121,40 @@ const work = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="w-full xl:w-[50%]">
-                            <Swiper>
-
-                            </Swiper>
-                        </div>
                     </div>
                     <div className="w-full xl:w-[50%]">
                         <Swiper
                             spaceBetween={30}
                             slidesPerView={1}
-                            className="xl:h-[520px] mb-12" 
+                            className="xl:h-[540px] mb-12" 
                             onSlideChange={handleSlideChange}  
                         >
                             {projects.map((item,index)=>{
                                 return( 
                                 <SwiperSlide key={index} className="w-full">
-                                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50">
-
+                                    <div className="h-[520px] relative group flex justify-center items-center bg-pink-50/20 -mt-8">
+                                        {/* overlay */}
+                                        <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10">
+                                        </div>
+                                        {/* image */}
+                                        <div className="relative w-full h-full overflow-hidden">
+                                            <Image
+                                                src={project.image}
+                                                fill
+                                                sizes="300vw"
+                                                alt="Project image"
+                                            />
+                                        </div>
                                     </div>
                                 </SwiperSlide>);
                             })}
+                            {/*slider buttons*/}
+                            <WorkSliderBtns 
+                            containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20
+                            w-full justify-between xl:w-max xl:justify-none" 
+                            btnStyles="bg-accent hover:bg-accent-hover text-primary
+                            text-[22px] w-[44px] h-[44px] flex justify-center items-center 
+                            transition-all"/>
                         </Swiper>
                     </div>
                 </div>
