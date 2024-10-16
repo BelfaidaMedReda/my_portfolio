@@ -36,7 +36,7 @@ const projects = [
         description: "Developping algorithms to detect intersections between multiple polygons",
         stack: [{ name: 'Python' }],
         image: "/projects/art.png",
-        github: "https://github.com/BelfaidaMedReda?tab=repositories",
+        github: "https://github.com/BelfaidaMedReda/Intersections-detector",
     },
 ];
 
