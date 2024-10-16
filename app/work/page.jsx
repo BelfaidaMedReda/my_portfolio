@@ -17,7 +17,7 @@ const projects = [
         title: "project 1",
         description: "An approximation of π using Monte-Carlo's method",
         stack: [{ name: 'Python' }],
-        image: "/projects/hh.png",
+        image: "/projects/p1.png",
         github: "https://github.com/BelfaidaMedReda/-Approximation-",
     },
     {
@@ -26,7 +26,7 @@ const projects = [
         title: "project 2",
         description: "Development of a Graphical User Interface library",
         stack: [{ name: 'C' }],
-        image: "/projects/dow.png",
+        image: "/projects/p2.png",
         github: "https://github.com/BelfaidaMedReda/Projet_IG",
     },
     {
@@ -35,7 +35,7 @@ const projects = [
         title: "project 3",
         description: "Developping algorithms to detect intersections between multiple polygons",
         stack: [{ name: 'Python' }],
-        image: "/projects/poly.png",
+        image: "/projects/art.png",
         github: "https://github.com/BelfaidaMedReda?tab=repositories",
     },
 ];
@@ -107,15 +107,15 @@ const Work = () => {
                         >
                             {projects.map((item, index) => (
                                 <SwiperSlide key={index} className="w-full">
-                                    <div className="h-[520px] relative group flex justify-center items-center bg-pink-50/20 -mt-8">
-                                        <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10">
+                                    <div className="h-[520px] relative group flex justify-center items-center" style={{ backgroundColor: 'rgb(28, 28, 34)' }}>
+                                        <div className="absolute top-0 bottom-0 w-full h-full bg-primary/10 z-10">
                                         </div>
                                         <div className="relative w-full h-full overflow-hidden">
                                             <Image
                                                 src={item.image}
                                                 fill
                                                 alt="Project image"
-                                                className="object-cover"
+                                                className="object-contain"
                                             />
                                         </div>
                                     </div>
