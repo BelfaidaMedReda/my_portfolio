@@ -38,6 +38,15 @@ const projects = [
         image: "/projects/art.png",
         github: "https://github.com/BelfaidaMedReda/Intersections-detector",
     },
+    {
+        num: "04",
+        category: "Movie Recommender System",
+        title: "project 4",
+        description: "Developing a content-based movie recommendation system to suggest similar movies based on a selected title",
+        stack: [{ name: 'Python' },{name:'Streamlit'}],
+        image: "/projects/MR-App.png",
+        github: "https://github.com/BelfaidaMedReda/Movie-Recommender",
+    }
 ];
 
 const Work = () => {
