@@ -46,7 +46,39 @@ const projects = [
         stack: [{ name: 'Python' },{name:'Streamlit'}],
         image: "/projects/MR-App.png",
         github: "https://github.com/BelfaidaMedReda/Movie-Recommender",
-    }
+    },
+    {
+        num: "05",
+        category: "OOP",
+        title: "project 5",
+        description: "Developing a Java-based simulation system for modeling and coordinating a team of firefighting robots",
+        stack: [{ name: 'Java' },{name:'Makefile'}],
+        image: "/projects/OOP.png",
+        github: "https://github.com/BelfaidaMedReda/OOP-Project",
+    },
+    {
+        num: "06",
+        category: "Geometric Modeling",
+        title: "project 6",
+        description: "Modeling parametric curves interpolating a set of points using multiple interpolation methods",
+        stack: [{ name: 'Python' }],
+        image: "/projects/GeoMod.png",
+        github: "https://github.com/BelfaidaMedReda/Geometric-Modeling",
+    },
+    {
+        num: "07",
+        category: "AFCON 2025 Winner Prediction",
+        title: "project 7",
+        description: "Predicting AFCON 2025's winner using Machine Learning models",
+        stack: [{ name: 'Python' }],
+        image: "/projects/Afcon2025.png",
+        github: "https://github.com/BelfaidaMedReda/AFCON-2025-winner",
+    },
+
+
+
+
+
 ];
 
 const Work = () => {
