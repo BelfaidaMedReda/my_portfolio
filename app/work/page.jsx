@@ -74,9 +74,15 @@ const projects = [
         image: "/projects/Afcon2025.png",
         github: "https://github.com/BelfaidaMedReda/AFCON-2025-winner",
     },
-
-
-
+    {
+        num: "08",
+        category: "Database Management Project",
+        title: "project 8",
+        description: "Design of a database management application for a company that operates an auction sales service",
+        stack: [{ name: 'Java' },{name:'PL/SQL'}],
+        image: "/projects/DBManag.png",
+        github: "https://github.com/BelfaidaMedReda/DataBase-Management-Project",
+    }
 
 
 ];
