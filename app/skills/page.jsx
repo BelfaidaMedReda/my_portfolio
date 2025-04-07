@@ -6,32 +6,35 @@ import { delay, motion } from "framer-motion";
 
 
 const skills = [
-
-    {
-        num:"01",
-        title:"Web developpement",
-        description:"Skilled in creating responsive, dynamic websites using modern frameworks",
-        href:"",
-    },
-    {
-        num:"02",
-        title:"Data Modeling",
-        description:"Experienced in designing efficient databases using PostgreSQL",
-        href:"",
-    },
-    {
-        num:"03",
-        title:"Machine/Deep Learning",
-        description:"Proficient in ML algorithms and tools like Scikit-learn and TensorFlow for real-world applications ",
-        href:"",
-    },
-    {
-        num:"04",
-        title:"Applied Mathematics",
-        description:"Strong knowledge of probability, statistics, and linear algebra for data related topics",
-        href:"",
-    },
-]
+  {
+    num: "01",
+    title: "Software Dev.",
+    description:
+      "Skilled in designing and building software applications, from front-end interfaces to back-end systems",
+    href: "https://github.com/BelfaidaMedReda/portfolio-index/tree/main/Software-Dev",
+  },
+  {
+    num: "02",
+    title: "Data Engineering",
+    description:
+      "Experienced in designing and optimizing databases, building data pipelines, and working with SQL databases",
+    href: "https://github.com/BelfaidaMedReda/portfolio-index/tree/main/Data-Engineering",
+  },
+  {
+    num: "03",
+    title: "Machine/Deep Learning",
+    description:
+      "Proficient in ML algorithms and tools like Scikit-learn and TensorFlow for real-world applications ",
+    href: "https://github.com/BelfaidaMedReda/portfolio-index/tree/main/Machine-Deep%20Learning",
+  },
+  {
+    num: "04",
+    title: "Applied Mathematics",
+    description:
+      "Strong knowledge of probability, statistics, and linear algebra for data related topics",
+    href: "https://github.com/BelfaidaMedReda/portfolio-index/tree/main/Applied-Mathematics",
+  },
+];
 
 
 

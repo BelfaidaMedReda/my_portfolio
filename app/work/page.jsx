@@ -11,80 +11,99 @@ import Link from "next/link";
 import { WorkSliderBtns } from "@/components/ui/WorkSliderBtns";
 
 const projects = [
-    {
-        num: "01",
-        category: "π Approximation",
-        title: "project 1",
-        description: "An approximation of π using Monte-Carlo's method",
-        stack: [{ name: 'Python' }],
-        image: "/projects/p1.png",
-        github: "https://github.com/BelfaidaMedReda/-Approximation-",
-    },
-    {
-        num: "02",
-        category: "GUI developpement",
-        title: "project 2",
-        description: "Development of a Graphical User Interface library",
-        stack: [{ name: 'C' }],
-        image: "/projects/p2.png",
-        github: "https://github.com/BelfaidaMedReda/Projet_IG",
-    },
-    {
-        num: "03",
-        category: "Polygons",
-        title: "project 3",
-        description: "Developping algorithms to detect intersections between multiple polygons",
-        stack: [{ name: 'Python' }],
-        image: "/projects/art.png",
-        github: "https://github.com/BelfaidaMedReda/Intersections-detector",
-    },
-    {
-        num: "04",
-        category: "Movie Recommender System",
-        title: "project 4",
-        description: "Developing a content-based movie recommendation system to suggest similar movies based on a selected title",
-        stack: [{ name: 'Python' },{name:'Streamlit'}],
-        image: "/projects/MR-App.png",
-        github: "https://github.com/BelfaidaMedReda/Movie-Recommender",
-    },
-    {
-        num: "05",
-        category: "OOP",
-        title: "project 5",
-        description: "Developing a Java-based simulation system for modeling and coordinating a team of firefighting robots",
-        stack: [{ name: 'Java' },{name:'Makefile'}],
-        image: "/projects/OOP.png",
-        github: "https://github.com/BelfaidaMedReda/OOP-Project",
-    },
-    {
-        num: "06",
-        category: "Geometric Modeling",
-        title: "project 6",
-        description: "Modeling parametric curves interpolating a set of points using multiple interpolation methods",
-        stack: [{ name: 'Python' }],
-        image: "/projects/GeoMod.png",
-        github: "https://github.com/BelfaidaMedReda/Geometric-Modeling",
-    },
-    {
-        num: "07",
-        category: "AFCON 2025 Winner Prediction",
-        title: "project 7",
-        description: "Predicting AFCON 2025's winner using Machine Learning models",
-        stack: [{ name: 'Python' }],
-        image: "/projects/Afcon2025.png",
-        github: "https://github.com/BelfaidaMedReda/AFCON-2025-winner",
-    },
-    {
-        num: "08",
-        category: "Database Management Project",
-        title: "project 8",
-        description: "Design of a database management application for a company that operates an auction sales service",
-        stack: [{ name: 'Java' },{name:'PL/SQL'}],
-        image: "/projects/DBManag.png",
-        github: "https://github.com/BelfaidaMedReda/DataBase-Management-Project",
-    }
+  {
+    num: "01",
+    category: "π Approximation",
+    title: "project 1",
+    description: "An approximation of π using Monte-Carlo's method",
+    stack: [{ name: "Python" }],
+    image: "/projects/p1.png",
+    github: "https://github.com/BelfaidaMedReda/-Approximation-",
+  },
+  {
+    num: "02",
+    category: "GUI developpement",
+    title: "project 2",
+    description: "Development of a Graphical User Interface library",
+    stack: [{ name: "C" }],
+    image: "/projects/p2.png",
+    github: "https://github.com/BelfaidaMedReda/Projet_IG",
+  },
+  {
+    num: "03",
+    category: "Polygons",
+    title: "project 3",
+    description:
+      "Developping algorithms to detect intersections between multiple polygons",
+    stack: [{ name: "Python" }],
+    image: "/projects/art.png",
+    github: "https://github.com/BelfaidaMedReda/Intersections-detector",
+  },
+  {
+    num: "04",
+    category: "Movie Recommender System",
+    title: "project 4",
+    description:
+      "Developing a content-based movie recommendation system to suggest similar movies based on a selected title",
+    stack: [{ name: "Python" }, { name: "Streamlit" }],
+    image: "/projects/MR-App.png",
+    github: "https://github.com/BelfaidaMedReda/Movie-Recommender",
+  },
+  {
+    num: "05",
+    category: "OOP",
+    title: "project 5",
+    description:
+      "Developing a Java-based simulation system for modeling and coordinating a team of firefighting robots",
+    stack: [{ name: "Java" }, { name: "Makefile" }],
+    image: "/projects/OOP.png",
+    github: "https://github.com/BelfaidaMedReda/OOP-Project",
+  },
+  {
+    num: "06",
+    category: "Geometric Modeling",
+    title: "project 6",
+    description:
+      "Modeling parametric curves interpolating a set of points using multiple interpolation methods",
+    stack: [{ name: "Python" }],
+    image: "/projects/GeoMod.png",
+    github: "https://github.com/BelfaidaMedReda/Geometric-Modeling",
+  },
+  {
+    num: "07",
+    category: "AFCON 2025 Winner Prediction",
+    title: "project 7",
+    description: "Predicting AFCON 2025's winner using Machine Learning models",
+    stack: [{ name: "Python" }],
+    image: "/projects/Afcon2025.png",
+    github: "https://github.com/BelfaidaMedReda/AFCON-2025-winner",
+  },
+  {
+    num: "08",
+    category: "Database Management Project",
+    title: "project 8",
+    description:
+      "Design of a database management application for a company that operates an auction sales service",
+    stack: [{ name: "Java" }, { name: "PL/SQL" }],
+    image: "/projects/DBManag.png",
+    github: "https://github.com/BelfaidaMedReda/DataBase-Management-Project",
+  },
 
-
+  {
+    num: "09",
+    category: "Projet Génie Logiciel",
+    title: "project 9",
+    description:
+      "Design of a compiler for a simplified object-oriented language Deca ",
+    stack: [
+      { name: "Java" },
+      { name: "ANTLR" },
+      { name: "Shell" },
+      { name: "Docker" },
+    ],
+    image: "/projects/Compiler-design.jpg",
+    github: "https://github.com/BelfaidaMedReda/ProjetGL",
+  },
 ];
 
 const Work = () => {
