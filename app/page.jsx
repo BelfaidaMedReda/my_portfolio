@@ -16,7 +16,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Computer Science student at Grenoble INP - Ensimag</span>
             <h1 className="h1 mb-6">
-                Hello I&apos;m <br/><span className="text-accent">Reda Belfaida</span>
+                Hello I&apos;m <br/><span className="text-accent">Mohammed Reda Belfaida</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               Creative Problem-Solver and Data-Driven Strategist, Bridging Technology and Business with a Passion for Sustainable Innovation.

@@ -4,11 +4,12 @@ import { Tabs, TabsContent, TabsList,TabsTrigger } from "@/components/ui/tabs";
 import { BsFiletypeSql } from "react-icons/bs";
 import { FaGitAlt } from "react-icons/fa6";
 import { VscVscodeInsiders } from "react-icons/vsc";
-{/* import { ScrollArea } from "@/components/ui/scroll-area";*/}
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 import {SiTailwindcss,SiNextdotjs, SiPython,SiC,SiR,SiIntellijidea,SiRstudioide,SiClion,SiPostgresql} from "react-icons/si";
 import App from "@/components/ui/EducationCard";
+import AppExp from "@/components/ui/ExperienceCard";
 import { TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
 import { Tooltip, TooltipContent } from "@/components/ui/tooltip";
 
@@ -36,7 +37,7 @@ const about = {
         },
         {
             fieldName:"Nationality",
-            fieldValue:"Morrocan",
+            fieldValue:"Moroccan",
         },
         {
             fieldName:"Languages",
@@ -46,46 +47,10 @@ const about = {
 }
 
 
-{/*Experience data
-    const experience = {
-    icon:"/assets/badge.svg",
-    title:"My experience",  
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
-    items:[
-        {
-            company : "Tech Solutions Inc.",
-            position : "Full Stack Developper",
-            duration : "2022 - Present"
-        },
-        {
-            company : "Web Design Studio",
-            position : "Front-End Developper Intern",
-            duration : "Summer 2021"
-        },
-        {
-            company : "E-commerce start-up",
-            position : "Freelance Web Developper",
-            duration : "2020 - 2021"
-        },
-        {
-            company : "Tech Academy",
-            position : "Teaching Assistant",
-            duration : "2019 - 2021"
-        },
-        {
-            company : "Digital Agency",
-            position : "UI/UX Designer",
-            duration : "2018 - 2019"
-        },
-        {
-            company : "Software Developpement firm",
-            position : "Junior Developper",
-            duration : "2017 - 2018"
-        },
-    ]
-}
+
+
     
-*/ }
+
 
 
 
@@ -197,16 +162,13 @@ const Resume = () => {
         >
             <div className="container mx-auto">
                     <Tabs
-                        defaultValue="education"
+                        defaultValue="experience"
                         className="flex flex-col xl:flex-row gap-[60px]"
                     >
                         <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                             
-                            {/*
-                                <TabsTrigger value="experience">Experience</TabsTrigger>
-                            */}
-
                             
+                            <TabsTrigger value="experience">Experience</TabsTrigger>
 
                             <TabsTrigger value="education">Education</TabsTrigger>
                             <TabsTrigger value="Tech Stack">Tech Stack</TabsTrigger>
@@ -216,45 +178,16 @@ const Resume = () => {
                         
                         <div className="min-h-[70vh] w-full">
 
-                        {/*
+                        
                         <TabsContent value="experience" className="w-full">
-                                <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                                    <h3 className="text-4xl font-bold">{experience.title}</h3>
-                                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                                        {experience.description}
-                                    </p>
-                                    <ScrollArea className="h-[400px]">
-                                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                                            {experience.items.map((item,index)=>{
-                                                return(
-                                                    <li 
-                                                    key={index}
-                                                    className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl 
-                                                    flex flex-col justify-center items-center lg:items-start                    
-                                                    gap-1"
-                                                    >
-                                                        <span className="text-accent">{item.duration}</span>
-                                                        <h3 className="text-xl max-w-[260px] min-h-[60px]
-                                                        text-center lg:text-left"> 
-                                                            {item.position}
-                                                        </h3>
-                                                        <div className="flex items-center gap-3">
-                                                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                                                            <p className="text-white/60">{item.company}</p>
-                                                        </div>
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    </ScrollArea>
-                                </div>
-                            </TabsContent>
+                            <AppExp/>
+                        </TabsContent>
                         
                         
                         
                         
                         
-                        */}
+                        
                         
 
 

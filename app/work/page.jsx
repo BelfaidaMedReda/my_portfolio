@@ -51,7 +51,7 @@ const projects = [
   },
   {
     num: "05",
-    category: "OOP",
+    category: "OOP Project",
     title: "project 5",
     description:
       "Developing a Java-based simulation system for modeling and coordinating a team of firefighting robots",
@@ -80,7 +80,7 @@ const projects = [
   },
   {
     num: "08",
-    category: "Database Management Project",
+    category: "Database Management Application",
     title: "project 8",
     description:
       "Design of a database management application for a company that operates an auction sales service",
@@ -91,7 +91,7 @@ const projects = [
 
   {
     num: "09",
-    category: "Projet Génie Logiciel",
+    category: "Génie Logiciel",
     title: "project 9",
     description:
       "Design of a compiler for a simplified object-oriented language Deca ",
@@ -132,7 +132,7 @@ const Work = () => {
                             </div>
                             <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all 
                             duration-500 capitalize">
-                                {project.category} project
+                                {project.category} 
                             </h2>
                             <p className="text-white/60">{project.description}</p>
                             <ul className="flex gap-4">

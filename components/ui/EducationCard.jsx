@@ -52,7 +52,7 @@ const educationData = {
       instution: "Grenoble INP - Ensimag",
       degree: "Engineer's degree",
       duration: "2023 - Present",
-      field: "Mathematical modeling, simulation and graphics",
+      field: "Master of AI (M2AI)",
       
     },
     {
@@ -60,19 +60,23 @@ const educationData = {
       instution: "Lycée Claude Fauriel",
       degree: "Preparatory Classes",
       duration: "2022 - 2023",
-      field: "Math & Physics"
+      field: "Math & Physics & Computer Science"
     },
     {
       icon: "/assets/Med6-logo.png",
       instution: "Lycée Mohammed VI",
       degree: "Preparatory Classes",
       duration: "2020 - 2022",
-      field: "Math & Physics"
+      field: "Math & Physics & Computer Science"
     },
   ],
 };
+
+
+
 
 // You can use the EducationSection component like this
 export default function App() {
   return <EducationSection education={educationData} />;
 };
+
