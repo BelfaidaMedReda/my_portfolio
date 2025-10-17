@@ -104,6 +104,21 @@ const projects = [
     image: "/projects/Compiler-design.jpg",
     github: "https://github.com/BelfaidaMedReda/ProjetGL",
   },
+
+  {
+    num: "10",
+    category: "RAG chatbot",
+    title: "project 10",
+    description:
+      "Design of a RAG chatbot with Amazon Bedrock",
+    stack: [
+      { name: "AWS" },
+      { name: "Knowledge Base" },
+    ],
+    image: "/projects/rag.jpg",
+    github: "https://github.com/BelfaidaMedReda/RAG-Chatbot-using-AWS-Bedrock",
+  },
+
 ];
 
 const Work = () => {
