@@ -183,15 +183,6 @@ const Resume = () => {
                             <AppExp/>
                         </TabsContent>
                         
-                        
-                        
-                        
-                        
-                        
-                        
-
-
-
 
 
                             {/* education */ }

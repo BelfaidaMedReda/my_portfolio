@@ -71,17 +71,8 @@ const projects = [
   },
   {
     num: "07",
-    category: "AFCON 2025 Winner Prediction",
-    title: "project 7",
-    description: "Predicting AFCON 2025's winner using Machine Learning models",
-    stack: [{ name: "Python" }],
-    image: "/projects/Afcon2025.png",
-    github: "https://github.com/BelfaidaMedReda/AFCON-2025-winner",
-  },
-  {
-    num: "08",
     category: "Database Management Application",
-    title: "project 8",
+    title: "project 7",
     description:
       "Design of a database management application for a company that operates an auction sales service",
     stack: [{ name: "Java" }, { name: "PL/SQL" }],
@@ -90,9 +81,9 @@ const projects = [
   },
 
   {
-    num: "09",
+    num: "08",
     category: "Génie Logiciel",
-    title: "project 9",
+    title: "project 8",
     description:
       "Design of a compiler for a simplified object-oriented language Deca ",
     stack: [
@@ -106,9 +97,9 @@ const projects = [
   },
 
   {
-    num: "10",
+    num: "09",
     category: "RAG chatbot",
-    title: "project 10",
+    title: "project 9",
     description:
       "Design of a RAG chatbot with Amazon Bedrock",
     stack: [
@@ -118,6 +109,36 @@ const projects = [
     image: "/projects/rag.jpg",
     github: "https://github.com/BelfaidaMedReda/RAG-Chatbot-using-AWS-Bedrock",
   },
+
+  {
+    num: "10",
+    category: "Graph-Cut for Disparity Estimation",
+    title: "project 10",
+    description:
+      "Graph-Cut Stereo Disparity Estimation & 3D Reconstruction",
+    stack: [
+      { name: "C++" },
+      { name: "Computer Vision" },
+      { name: "3D Reconstruction" },
+    ],
+    image: "/projects/graph_disparity.png",
+    github: "https://github.com/BelfaidaMedReda/Computer-Vision-labs/tree/main/Lab%204%3A%20Graphs%20Cuts%20for%20diparity%20estimation",
+  },
+
+  {
+    num: "11",
+    category: "Sampling with Generative Models",
+    title: "project 11",
+    description:
+      "Generative sampling with normalizing flows, importance sampling and MCMC.",
+    stack: [
+      { name: "Python" },
+      { name: "Generative Sampling" },
+    ],
+    image: "/projects/generative_sampling.png",
+    github: "https://github.com/BelfaidaMedReda/Sampling-with-generative-models",
+  },
+
 
 ];
 
