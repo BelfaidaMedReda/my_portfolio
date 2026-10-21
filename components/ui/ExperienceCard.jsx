@@ -67,7 +67,7 @@ const experience = {
             position : "Data Scientist",
             duration : "Feb. 2026 - Aug. 2026",
             details: [
-                "Developed a predictive model for Morocco’s policy rate by combining macroeconomic indicators with sentiment analysis of economic media, using a tailored NLP pipeline and statistical forecasting methods",
+                "Developed a modular library for Credit Conversion Factor (CCF) modeling, integrating statistical methods for risk differentiation, risk quantification, and model validation.",
             ],
         },
         
