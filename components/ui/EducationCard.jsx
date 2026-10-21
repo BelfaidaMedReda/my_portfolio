@@ -52,7 +52,7 @@ const educationData = {
       instution: "Grenoble INP - Ensimag",
       degree: "Engineer's degree",
       duration: "2023 - 2026",
-      field: "Master of AI (M2AI)",
+      field: "AI & Machine Learning & Data Science & Software Engineering",
       
     },
     {

@@ -54,6 +54,14 @@ const experience = {
     description:"Applications of Machine Learning and Data Science in Real-World Projects.",
     items:[
         {
+            company :  "Société Générale",
+            position : "Data Scientist",
+            duration : "Feb. 2026 - Aug. 2026",
+            details: [
+                "Developed a modular library for Credit Conversion Factor (CCF) modeling, integrating statistical methods for risk differentiation, risk quantification, and model validation.",
+            ],
+        },
+        {
             company :  "Wafa Gestion - Attijariwafa bank",
             position : "Machine Learning Intern",
             duration : "Jul. 2025 - Sep. 2025",
@@ -62,14 +70,7 @@ const experience = {
 
             ],
         },
-        {
-            company :  "Société Générale",
-            position : "Data Scientist",
-            duration : "Feb. 2026 - Aug. 2026",
-            details: [
-                "Developed a modular library for Credit Conversion Factor (CCF) modeling, integrating statistical methods for risk differentiation, risk quantification, and model validation.",
-            ],
-        },
+
         
     ]
 }
